@@ -1,8 +1,13 @@
 <!--Camera-->
+
 <div id="tabstrip-camera" 
      data-role="view"  
      data-title="Take a photo" >
-    
-    Here should be tha camera to take photoes.
-    
+
+    <button class="login-button" data-role="button" onclick="capturePhoto();">Capture Photo</button> <br>
+    <button class="login-button" data-role="button" onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+    <button class="login-button" data-role="button" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+    <button class="login-button" data-role="button" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    <img style="display:none;" id="largeImage" src="" />
 </div>
